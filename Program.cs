@@ -10,24 +10,34 @@ namespace C_FundamentalsLoopsGame_Loop
     {
         static void Main(string[] args)
         {
-            int y;
-            int x;
-            
+            int y = 0;
+            int x = 0;
+
             //Console.SetCursorPosition(y,x);
 
+            Console.SetCursorPosition(y = 0, x = 0);
 
             Console.WriteLine("game loop");
             bool gameOver = false;
 
 
+            
             while (gameOver == false)
             {
                 char input;
                 ConsoleKeyInfo readKeyInput = Console.ReadKey(true);
                 input = readKeyInput.KeyChar;
 
-                Console.WriteLine("user input = " + input);
+               
+                if (input == 's')
+                {
+                    Console.SetCursorPosition(x,y);
+                }
             }
+            
+           // Console.Readkey("w");
+            //ConsoleKeyInfo
+           // ConsoleKeyInfo.getChar;
             Console.WriteLine("game over!");
             Console.ReadKey(true);
         }
